@@ -8,6 +8,16 @@
     android:layout_height="match_parent"
     tools:context="com.benjaminsanchezthethird.hellowurld.MainActivity">
 
+    <ImageView
+
+        android:id="@+id/birthday_image"
+        android:src="@drawable/androidparty"
+        android:scaleType = "centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        />
 
     <TextView
 
@@ -16,25 +26,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Happy Birthday Damon,"
+        android:textSize = "25dp"
+        android:layout_margin = "20dp"
+        android:fontFamily = "monospace"
+        android:textColor = "@android:color/white"
 
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize = "30dp"
+        android:layout_margin = "40dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:textColor = "@android:color/white"
         android:text = "from Ben!"
-
-        />
-
-    <ImageView
-
-        android:id="@+id/birthday_image"
-        android:src="@drawable/androidparty"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:fontFamily = "monospace"
 
         />
 
