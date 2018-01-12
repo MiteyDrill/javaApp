@@ -43,11 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitOrder(View view) {
 
+        String thank_you_message = "Thank You!";
+
+
         //variable holds the amount of coffee ordered
 
         //sends number to function that'll display price on screen
         display(numOfCoffee);
-        displayPrice(numOfCoffee * 2);
+        displayPrice(numOfCoffee * 2, thank_you_message);
     }
 
     /**
@@ -57,15 +60,16 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.total_number);
         quantityTextView.setText("" + number);
 
+
      }
 
-     private void displayPrice(int num){
+     private void displayPrice(int num, String msg){
 
         //sets variable
         TextView priceTextView = (TextView) findViewById(R.id.price_number);
 
         //sets variable to that price.
-        priceTextView.setText("$ " + num);
+        priceTextView.setText("$ " + num*2 + "\n " +msg);
 
      }
 }
